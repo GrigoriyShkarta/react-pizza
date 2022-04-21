@@ -1,6 +1,9 @@
 import {useState} from "react";
 
+import Loader from './Loader'
+
 import classNames from "classnames";
+
 
 const PizzaBlock = ({name, imageUrl, price, types, sizes}) => {
 
@@ -9,6 +12,7 @@ const PizzaBlock = ({name, imageUrl, price, types, sizes}) => {
 
     const availableTypes = ['тонкое', 'традиционное'];
     const availableSizes = [26, 30, 40];
+
 
     const onSelectType = (index) => {
         setActiveTab(index);
@@ -72,6 +76,7 @@ const PizzaBlock = ({name, imageUrl, price, types, sizes}) => {
                 </div>
             </div>
         </div>
+        // <Loader/>
     );
 };
 
