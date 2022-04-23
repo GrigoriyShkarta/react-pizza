@@ -33,6 +33,7 @@ const PizzaBlock = ({id, name, imageUrl, price, types, sizes, onClickAddPizza, a
         };
         onClickAddPizza(obj)
     };
+    // console.log(onAddPizza())
 
     return (
         <div className="pizza-block">
